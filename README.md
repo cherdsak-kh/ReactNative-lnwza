@@ -1,50 +1,85 @@
-# Welcome to your Expo app 👋
+# ReactNative-lnwza
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+แอปพลิเคชันมือถือที่พัฒนาด้วย React Native และ Expo โปรเจกต์นี้ใช้ Expo Router สำหรับระบบ Routing และมีการเชื่อมต่อกับ Supabase, React Native Maps และฟีเจอร์อื่นๆ ของ Expo เพื่อประสบการณ์การใช้งานบนมือถือที่สมบูรณ์แบบ
 
-## Get started
+## การเริ่มต้นใช้งาน (Getting Started)
 
-1. Install dependencies
+คำแนะนำเหล่านี้จะช่วยให้คุณสามารถคัดลอกโปรเจกต์และรันบนเครื่องของคุณสำหรับการพัฒนาและการทดสอบ (Development and Testing) อ่านเพิ่มเติมที่หัวข้อ "การนำไปใช้งานจริง (Deployment)" สำหรับข้อมูลวิธีการนำโปรเจกต์ไปเปิดใช้งานจริง
 
-   ```bash
-   npm install
-   ```
+### สิ่งที่ต้องเตรียมพร้อม (Prerequisites)
 
-2. Start the app
+เครื่องมือที่คุณจำเป็นต้องติดตั้งก่อนเริ่มการพัฒนาซอฟต์แวร์ และวิธีการติดตั้ง:
 
-   ```bash
-   npx expo start
-   ```
+*   **Node.js**: สามารถดาวน์โหลดและติดตั้งได้จาก [เว็บไซต์หลักของ Node.js](https://nodejs.org/)
+*   **Expo CLI**: สามารถใช้งานได้ผ่านคำสั่ง `npx` (หรือติดตั้งแบบ Global)
+*   **Android Studio** หรือ **Xcode**: (เลือกอย่างใดอย่างหนึ่งหรือทั้งสอง) สำหรับการรันแอปบน Android Emulator หรือ iOS Simulator
 
-In the output, you'll find options to open the app in a
+### การติดตั้ง (Installing)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+ขั้นตอนตัวอย่างแบบละเอียดในการเตรียมสภาพแวดล้อมเพื่อการพัฒนา (Development Environment):
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. **ติดตั้งแพ็กเกจ (Dependencies) ทั้งหมดที่จำเป็น**
 
-## Get a fresh project
+    เปิด Terminal เข้าไปที่โฟลเดอร์หลักของโปรเจกต์ แล้วใช้คำสั่ง:
+    ```bash
+    npm install
+    ```
 
-When you're ready, run:
+2. **รันเซิร์ฟเวอร์สำหรับพัฒนา (Development Server)**
 
+    เริ่มต้นทำงาน Expo development server ด้วยคำสั่ง:
+    ```bash
+    npm start
+    ```
+
+เมื่อเซิร์ฟเวอร์เริ่มทำงาน คุณสามารถกด `a` เพื่อเปิดแอปพลิเคชันบนสมาร์ตโฟนจำลองระบบ Android เครื่องมือจะทำการติดตั้งแอปและรันขึ้นมาทันที
+
+## การรันการทดสอบ (Running the tests)
+
+คำอธิบายเกี่ยวกับการรันระบบทดสอบสำหรับโปรเจกต์นี้
+
+### การทดสอบสไตล์การเขียนโค้ด (Coding style tests)
+
+โปรเจกต์นี้มีการตั้งค่า ESLint ซึ่งจะช่วยตรวจสอบการเขียนโค้ดและวิเคราะห์หาข้อผิดพลาด (Syntax errors หรือ Style issues)
+
+รันคำสั่งด้านล่างเพื่อตรวจสอบ:
 ```bash
-npm run reset-project
+npm run lint
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## การนำไปใช้งานจริง (Deployment)
 
-## Learn more
+สำหรับขั้นตอนการนำแอปพลิเคชันนี้ขึ้นใช้งานบน App Store หรือ Google Play สามารถใช้บริการโครงสร้างพื้นฐานของ Expo อย่าง EAS Build ได้ ดูรายละเอียดเพิ่มเติมเกี่ยวกับวิธีจัดการที่คู่มือของ [Expo Application Services](https://docs.expo.dev/build/introduction/)
 
-To learn more about developing your project with Expo, look at the following resources:
+## สร้างด้วย (Built With)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* [React Native](https://reactnative.dev/) - เฟรมเวิร์กหลักในการพัฒนาแอปพลิเคชันมือถือ
+* [Expo](https://expo.dev/) - แพลตฟอร์มและเครื่องมือสำหรับการพัฒนาที่รวดเร็ว
+* [Expo Router](https://docs.expo.dev/router/introduction/) - ระบบจัดการเส้นทางในแอปพลิเคชัน (Routing)
+* [Supabase](https://supabase.com/) - ระบบฐานข้อมูลและระบบหลังบ้าน
+* [React Native Maps](https://github.com/react-native-maps/react-native-maps) - ส่วนแสดงแผนที่
+* [React Native Chart Kit](https://github.com/indiespirit/react-native-chart-kit) - ส่วนแสดงกราฟข้อมูล
 
-## Join the community
+## การมีส่วนร่วม (Contributing)
 
-Join our community of developers creating universal apps.
+โปรดอ่านรายละเอียดได้ที่ `CONTRIBUTING.md` เกี่ยวกับโค้ดแห่งความประพฤติของเรา และกระบวนการรวมถึงขั้นตอนในการ Pull Requests กลับมาที่เรา
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## การจัดการเวอร์ชัน (Versioning)
+
+เราใช้ [SemVer](http://semver.org/) สำหรับการทำเวอร์ชันของซอฟต์แวร์ สำหรับเวอร์ชันต่างๆ ที่เปิดให้ใช้งาน สามารถดูได้ที่ tags บน Repository นี้
+
+## ผู้จัดทำ (Authors)
+
+* **ชื่อของคุณ** - *ผู้จัดทำช่วงเริ่มต้น* - [ข้อมูลผู้ใช้ของคุณ](https://github.com/cherdsak-kh)
+
+หรือสามารถดูรายชื่อผู้ที่มีส่วนในการช่วยเตรียมโค้ดได้ที่ contributors 
+
+## ลิขสิทธิ์ (License)
+
+โปรเจกต์นี้ภายใต้การจดลิขสิทธิ์ประเภท MIT License - อ่านรายละเอียดเพิ่มเติมที่ไฟล์ `LICENSE.md`
+
+## กิตติกรรมประกาศ (Acknowledgments)
+
+* ขอขอบคุณโค้ดที่สามารถนำมาเป็นต้นแบบ
+* แรงบันดาลใจในการจัดทำ
+* อื่นๆ
