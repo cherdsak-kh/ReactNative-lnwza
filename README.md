@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/expo/expo/main/docs/public/favicon.ico" alt="Expo Logo" width="80" height="80">
   <h1 align="center">📱 ReactNative-lnwza</h1>
   <p align="center">
     <strong>แอปพลิเคชันมือถือที่รวบรวมฟังก์ชันการใช้งานหลากหลาย พัฒนาด้วย React Native และ Expo</strong>
